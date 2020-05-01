@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://netww.github.io/"/>
-  <updated>2020-05-01T15:34:49.842Z</updated>
+  <updated>2020-05-01T15:48:29.939Z</updated>
   <id>http://netww.github.io/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>pro-2019</title>
+    <link href="http://netww.github.io/2020/05/01/pro-2019/"/>
+    <id>http://netww.github.io/2020/05/01/pro-2019/</id>
+    <published>2020-05-01T15:47:32.000Z</published>
+    <updated>2020-05-01T15:48:29.939Z</updated>
+    
+    <content type="html"><![CDATA[<p>杭州甲壹科技有限公司<br>台湾笙科电子股份有限公司上海代表…<br>广州恒成智能科技有限公司<br>牛津(海南)区块链研究院有限公司<br>平安租赁<br>上海精澄科技有限公司<br>华沃通讯(上海)有限公司<br>隔空（上海）智能科技有限公司<br>深圳精密达智能机器有限公司</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;杭州甲壹科技有限公司&lt;br&gt;台湾笙科电子股份有限公司上海代表…&lt;br&gt;广州恒成智能科技有限公司&lt;br&gt;牛津(海南)区块链研究院有限公司&lt;br&gt;平安租赁&lt;br&gt;上海精澄科技有限公司&lt;br&gt;华沃通讯(上海)有限公司&lt;br&gt;隔空（上海）智能科技有限公司&lt;br&gt;深圳精密达智能机器有
+      
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>ansible动态inventory</title>
