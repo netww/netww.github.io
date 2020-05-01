@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.8.0">
+    
+
+    
+
+    
+
+
+
+    <meta charset="utf-8">
+    
+    
+    
+    <title>windows、mac、android科学上网shadowsocks教程.md | 弹痕</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <meta name="theme-color" content="#3F51B5">
+    
+    
+    <meta name="keywords" content="shadowsocks">
+    <meta name="description" content="首先你得有一个可以翻墙的socks5的服务器，没有的话不用往下看了。 一、windows教程以chrome 为例：  安装SwitchyOmega插件下载地址：链接: https://pan.baidu.com/s/1qZAm9ly 密码: fr8j，包含三个文件，SwitchyOmega.crx、SwitchyOptions.bak、shadowsocks-gui-0.6.0-win-ia32.">
+<meta name="keywords" content="shadowsocks">
+<meta property="og:type" content="article">
+<meta property="og:title" content="windows、mac、android科学上网shadowsocks教程.md">
+<meta property="og:url" content="http://netww.github.io/2017/01/08/windows、mac、android科学上网shadowsocks教程/index.html">
+<meta property="og:site_name" content="弹痕">
+<meta property="og:description" content="首先你得有一个可以翻墙的socks5的服务器，没有的话不用往下看了。 一、windows教程以chrome 为例：  安装SwitchyOmega插件下载地址：链接: https://pan.baidu.com/s/1qZAm9ly 密码: fr8j，包含三个文件，SwitchyOmega.crx、SwitchyOptions.bak、shadowsocks-gui-0.6.0-win-ia32.">
+<meta property="og:locale" content="中文简体">
+<meta property="og:image" content="https://wx3.sinaimg.cn/mw690/771d3173gy1fnm9i0oysaj20ag0d1q32.jpg">
+<meta property="og:image" content="https://wx1.sinaimg.cn/mw690/771d3173gy1fnm9c9jhz3j20u01hcmyd.jpg">
+<meta property="og:updated_time" content="2018-01-19T14:11:42.632Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="windows、mac、android科学上网shadowsocks教程.md">
+<meta name="twitter:description" content="首先你得有一个可以翻墙的socks5的服务器，没有的话不用往下看了。 一、windows教程以chrome 为例：  安装SwitchyOmega插件下载地址：链接: https://pan.baidu.com/s/1qZAm9ly 密码: fr8j，包含三个文件，SwitchyOmega.crx、SwitchyOptions.bak、shadowsocks-gui-0.6.0-win-ia32.">
+<meta name="twitter:image" content="https://wx3.sinaimg.cn/mw690/771d3173gy1fnm9i0oysaj20ag0d1q32.jpg">
+    
+        <link rel="alternate" type="application/atom+xml" title="弹痕" href="/atom.xml">
+    
+    <link rel="shortcut icon" href="/img/favicon.ico">
+    <link rel="stylesheet" href="/css/style.css?v=1.7.1">
+    <script>window.lazyScripts=[]</script>
+
+    <!-- custom head -->
+    
+
+</head>
+
+<body>
+    <div id="loading" class="active"></div>
+
+    <aside id="menu" class="hide">
+  <div class="inner flex-row-vertical">
+    <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
+        <i class="icon icon-lg icon-close"></i>
+    </a>
+    <div class="brand-wrap" style="background-image:url(/img/brand.jpg)">
+      <div class="brand">
+        <a href="/" class="avatar waves-effect waves-circle waves-light">
+          <img src="/img/avatar.jpg">
+        </a>
+        <hgroup class="introduce">
+          <h5 class="nickname">弹痕</h5>
+          <a href="mailto:2877077368@qq.com" title="2877077368@qq.com" class="mail">2877077368@qq.com</a>
+        </hgroup>
+      </div>
+    </div>
+    <div class="scroll-wrap flex-col">
+      <ul class="nav">
+        
+            <li class="waves-block waves-effect">
+              <a href="/">
+                <i class="icon icon-lg icon-home"></i>
+                主页
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/archives">
+                <i class="icon icon-lg icon-archives"></i>
+                文章
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/tags">
+                <i class="icon icon-lg icon-tag"></i>
+                标签
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/categories">
+                <i class="icon icon-lg icon-th-list"></i>
+                分类
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="https://github.com/stamhes" target="_blank">
+                <i class="icon icon-lg icon-github"></i>
+                Github
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="http://www.weibo.com" target="_blank">
+                <i class="icon icon-lg icon-weibo"></i>
+                Weibo
+              </a>
+            </li>
+        
+      </ul>
+    </div>
+  </div>
+</aside>
+
+    <main id="main">
+        <header class="top-header" id="header">
+    <div class="flex-row">
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
+          <i class="icon icon-lg icon-navicon"></i>
+        </a>
+        <div class="flex-col header-title ellipsis">windows、mac、android科学上网shadowsocks教程.md</div>
+        
+        <div class="search-wrap" id="search-wrap">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
+                <i class="icon icon-lg icon-chevron-left"></i>
+            </a>
+            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="Search">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
+                <i class="icon icon-lg icon-search"></i>
+            </a>
+        </div>
+        
+        
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menuShare">
+            <i class="icon icon-lg icon-share-alt"></i>
+        </a>
+        
+    </div>
+</header>
+<header class="content-header post-header">
+
+    <div class="container fade-scale">
+        <h1 class="title">windows、mac、android科学上网shadowsocks教程.md</h1>
+        <h5 class="subtitle">
+            
+                <time datetime="2017-01-08T12:18:24.000Z" itemprop="datePublished" class="page-time">
+  2017-01-08
+</time>
+
+
+            
+        </h5>
+    </div>
+
+    
+
+
+</header>
+
+
+<div class="container body-wrap">
+    
+    <aside class="post-widget">
+        <nav class="post-toc-wrap" id="post-toc">
+            <h4>TOC</h4>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#一、windows教程"><span class="post-toc-number">1.</span> <span class="post-toc-text">一、windows教程</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#二、android手机教程"><span class="post-toc-number">2.</span> <span class="post-toc-text">二、android手机教程</span></a></li></ol>
+        </nav>
+    </aside>
+    
+<article id="post-windows、mac、android科学上网shadowsocks教程" class="post-article article-type-post fade" itemprop="blogPost">
+
+    <div class="post-card">
+        <h1 class="post-card-title">windows、mac、android科学上网shadowsocks教程.md</h1>
+        <div class="post-meta">
+            <time class="post-time" title="2017-01-08 20:18:24" datetime="2017-01-08T12:18:24.000Z" itemprop="datePublished">2017-01-08</time>
+
+            
+
+
+            
+<span id="busuanzi_container_page_pv" title="文章总阅读量" style="display:none">
+    <i class="icon icon-eye icon-pr"></i><span id="busuanzi_value_page_pv"></span>
+</span>
+
+
+        </div>
+        <div class="post-content" id="post-content" itemprop="postContent">
+            <p>首先你得有一个可以翻墙的socks5的服务器，没有的话不用往下看了。</p>
+<h1 id="一、windows教程"><a href="#一、windows教程" class="headerlink" title="一、windows教程"></a>一、windows教程</h1><p>以chrome 为例：</p>
+<ol>
+<li>安装SwitchyOmega插件<br>下载地址：链接: <a href="https://pan.baidu.com/s/1qZAm9ly" target="_blank" rel="noopener">https://pan.baidu.com/s/1qZAm9ly</a> 密码: fr8j，包含三个文件，SwitchyOmega.crx、SwitchyOptions.bak、shadowsocks-gui-0.6.0-win-ia32.tar.xz，分别是chrome插件、规则、windows gui客户端。<br>将SwitchyOmega.crx “crx”后缀改为”zip”, 即SwitchyOmega.zip，然后解压。chrome右上角选择更多工具》扩展程序，点击左上角的开发者模式，点击“加载已解压的扩展程序”，选择刚才解压的SwitchyOmega目录打开。</li>
+</ol>
+<p>2.设置SwitchyOmega，点击左边“导入/导出”，“从备份文件恢复”，选择SwitchyOptions.bak文件导入，选择左边自动切换，选中autoproxy模式，“规则列表网址” 填写<a href="https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt，点击“应用选项”按钮" target="_blank" rel="noopener">https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt，点击“应用选项”按钮</a>, 浏览器右上角点击switchomgea选中自动切换。</p>
+<p>3.打开windows客户端，解压shadowsocks-gui-0.6.0-win-ia32.tar.xz<br><figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="https://wx3.sinaimg.cn/mw690/771d3173gy1fnm9i0oysaj20ag0d1q32.jpg" alt="image" title="">
+                </div>
+                <div class="image-caption">image</div>
+            </figure><br>填好ip、port、passsword保存即可</p>
+<h1 id="二、android手机教程"><a href="#二、android手机教程" class="headerlink" title="二、android手机教程"></a>二、android手机教程</h1><p>下载地址：<a href="https://github.com/shadowsocks/shadowsocks-android/releases/download/v4.4.5/shadowsocks-nightly-4.4.5.apk" target="_blank" rel="noopener">https://github.com/shadowsocks/shadowsocks-android/releases/download/v4.4.5/shadowsocks-nightly-4.4.5.apk</a><br>设置：<br><figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="https://wx1.sinaimg.cn/mw690/771d3173gy1fnm9c9jhz3j20u01hcmyd.jpg" alt="image" title="">
+                </div>
+                <div class="image-caption">image</div>
+            </figure><br>填好服务器、端口、密码即可</p>
+
+        </div>
+
+        <blockquote class="post-copyright">
+    <div class="content">
+        
+
+        
+    </div>
+    <footer>
+        <a href="http://netww.github.io">
+            <img src="/img/avatar.jpg" alt="弹痕">
+            弹痕
+        </a>
+    </footer>
+</blockquote>
+
+        
+
+
+        <div class="post-footer">
+            
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/shadowsocks/">shadowsocks</a></li></ul>
+
+
+            
+<div class="page-share-wrap">
+    
+
+<div class="page-share" id="pageShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://netww.github.io/2017/01/08/windows、mac、android科学上网shadowsocks教程/&title=《windows、mac、android科学上网shadowsocks教程.md》 — 弹痕&pic=http://netww.github.io/img/avatar.jpg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://netww.github.io/2017/01/08/windows、mac、android科学上网shadowsocks教程/&title=《windows、mac、android科学上网shadowsocks教程.md》 — 弹痕&source=" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://netww.github.io/2017/01/08/windows、mac、android科学上网shadowsocks教程/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《windows、mac、android科学上网shadowsocks教程.md》 — 弹痕&url=http://netww.github.io/2017/01/08/windows、mac、android科学上网shadowsocks教程/&via=http://netww.github.io" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://netww.github.io/2017/01/08/windows、mac、android科学上网shadowsocks教程/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+
+    <a href="javascript:;" id="shareFab" class="page-share-fab waves-effect waves-circle">
+        <i class="icon icon-share-alt icon-lg"></i>
+    </a>
+</div>
+
+
+
+        </div>
+    </div>
+
+    
+<nav class="post-nav flex-row flex-justify-between">
+  
+    <div class="waves-block waves-effect prev">
+      <a href="/2017/07/15/opencv摄像头人脸识别python/" id="post-prev" class="post-nav-link">
+        <div class="tips"><i class="icon icon-angle-left icon-lg icon-pr"></i> Prev</div>
+        <h4 class="title">opencv摄像头人脸识别python</h4>
+      </a>
+    </div>
+  
+
+  
+    <div class="waves-block waves-effect next">
+      <a href="/2016/05/08/scrapy多spider运行/" id="post-next" class="post-nav-link">
+        <div class="tips">Next <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
+        <h4 class="title">scrapy多spider运行</h4>
+      </a>
+    </div>
+  
+</nav>
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+
+
+</div>
+
+        <footer class="footer">
+    <div class="top">
+        
+<p>
+    <span id="busuanzi_container_site_uv" style="display:none">
+        站点总访客数：<span id="busuanzi_value_site_uv"></span>
+    </span>
+    <span id="busuanzi_container_site_pv" style="display:none">
+        站点总访问量：<span id="busuanzi_value_site_pv"></span>
+    </span>
+</p>
+
+
+        <p>
+            
+                <span><a href="/atom.xml" target="_blank" class="rss" title="rss"><i class="icon icon-lg icon-rss"></i></a></span>
+            
+            <span>This blog is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</span>
+        </p>
+    </div>
+    <div class="bottom">
+        <p><span>弹痕 &copy; 2015 - 2020</span>
+            <span>
+                
+                Power by <a href="http://hexo.io/" target="_blank">Hexo</a> Theme <a href="https://github.com/yscoder/hexo-theme-indigo" target="_blank">indigo</a>
+            </span>
+        </p>
+    </div>
+</footer>
+
+    </main>
+    <div class="mask" id="mask"></div>
+<a href="javascript:;" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
+
+
+
+<div class="global-share" id="globalShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://netww.github.io/2017/01/08/windows、mac、android科学上网shadowsocks教程/&title=《windows、mac、android科学上网shadowsocks教程.md》 — 弹痕&pic=http://netww.github.io/img/avatar.jpg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://netww.github.io/2017/01/08/windows、mac、android科学上网shadowsocks教程/&title=《windows、mac、android科学上网shadowsocks教程.md》 — 弹痕&source=" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://netww.github.io/2017/01/08/windows、mac、android科学上网shadowsocks教程/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《windows、mac、android科学上网shadowsocks教程.md》 — 弹痕&url=http://netww.github.io/2017/01/08/windows、mac、android科学上网shadowsocks教程/&via=http://netww.github.io" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://netww.github.io/2017/01/08/windows、mac、android科学上网shadowsocks教程/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+<div class="page-modal wx-share" id="wxShare">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPYAAAD2CAAAAADAeSUUAAADI0lEQVR42u3aS26DUAwF0Ox/0+k0Uht6bYME1mEUtQXecQauP69XfL0/rs+f/P7t58/zJ//+nDy598YXNjY29jr2+/A6Zif3Hh8xuetbUJIv4GtosLGxsdexJ6nl+PXVNJYHuhcabGxsbOz89dW/rB59ci82NjY2drVjM+nzJMUMNjY2NnaecnJ8rwFUDeXlvTRsbGzs27Mn49i7fb5kvo2NjY19Y/a7eFUb93kLqdd+aiqwsbGxF7GvaBLlBUxeJEwKmK/vwsbGxl7ETsaoeQs+T3g90qTxhI2Njb2VPR/o9hpSvaZ/kvyi9IaNjY29gn1FqdB7Tq8hVV08wsbGxt7HPuvovRWf3tLk5K6Tv3lsbGzsG7CT9k0hcnE4kiFx3paqngobGxt7H3vSdq9e80bVaQkMGxsbewW7Cp43jPKhbzVYo6kINjY29iL2JS34AF8NdP756zmxsbGxV7CrS5DVQ/d41QKpnOqwsbGx17F7C5RnNf3zoCfJKQoTNjY29lJ29dDVUXEPlixllsfS2NjY2IvYZ41X81f2xgm9EEfvxcbGxn44e5I8JiOBaoLMhxNR6YKNjY29jt1b3Jlky2pxkie2pEWFjY2NvZV9VhFSDURvhFBdJPqjl4aNjY29iF19TT5wnSSh3gmjVhQ2Njb2InZvMJCPhCfLOnmTqPnlYWNjYy9iX3HQ/Pn5Uk4ynMifj42Njb2DncSjWnLkCzq9IW4vAWNjY2NvZecj23njvtpCmqTSQoCwsbGxV7DLKy+t5k71yfm9zQoMGxsbex17Mr7NF4Cqiz7HV/XMXwe92NjY2CvYSTrJD5EUNpMip1fwYGNjY+9mn9uaTwa3vfFw7/onb2NjY2M/lt371793uGoqyouK6lABGxsbexN7kveqDabqcLfXzOqlSWxsbOyns6st+OryzaR4mIemPB7AxsbGfiy7lxjyl+ULOoW1m2Jhg42NjY2dt3uq6SRvEvXS6iVTEWxsbOyHs88d5Vafk6e0S0oRbGxs7Fuy5yuVvbZUr1FVXSEajQewsbGxb8+eN2jOLUV6CakXSmxsbOyHs38A7VKlgQHk1hcAAAAASUVORK5CYII=" alt="微信分享二维码">
+</div>
+
+
+
+
+    <script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
+<script>
+var BLOG = { ROOT: '/', SHARE: true, REWARD: false };
+
+
+</script>
+
+<script src="/js/main.min.js?v=1.7.1"></script>
+
+
+<div class="search-panel" id="search-panel">
+    <ul class="search-result" id="search-result"></ul>
+</div>
+<template id="search-tpl">
+<li class="item">
+    <a href="{path}" class="waves-block waves-effect">
+        <div class="title ellipsis" title="{title}">{title}</div>
+        <div class="flex-row flex-middle">
+            <div class="tags ellipsis">
+                {tags}
+            </div>
+            <time class="flex-col time">{date}</time>
+        </div>
+    </a>
+</li>
+</template>
+
+<script src="/js/search.min.js?v=1.7.1" async></script>
+
+
+
+
+
+
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+<script>
+(function() {
+    var OriginTitile = document.title, titleTime;
+    document.addEventListener('visibilitychange', function() {
+        if (document.hidden) {
+            document.title = '死鬼去哪里了！';
+            clearTimeout(titleTime);
+        } else {
+            document.title = '(つェ⊂)咦!又好了!';
+            titleTime = setTimeout(function() {
+                document.title = OriginTitile;
+            },2000);
+        }
+    });
+})();
+</script>
+
+
+
+</body>
+</html>
